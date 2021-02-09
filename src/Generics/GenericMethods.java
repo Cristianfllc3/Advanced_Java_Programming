@@ -25,8 +25,6 @@ public class GenericMethods {
         }
         return list;
     }*/
-
-
     public static void main(String[] args) {
     List<Character> charList = arrayToList(charArray, new ArrayList<>());
     List<Integer> intList = arrayToList(intArray, new ArrayList<>());
