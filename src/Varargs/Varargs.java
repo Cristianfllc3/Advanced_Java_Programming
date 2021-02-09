@@ -1,9 +1,9 @@
 
-package varargs;
+package Varargs;
 
 /**
  *
- * @author bethan
+ * @author bethan/Cristian
  */
 public class Varargs {
     
