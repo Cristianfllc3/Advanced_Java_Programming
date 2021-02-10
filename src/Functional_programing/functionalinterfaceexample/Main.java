@@ -25,16 +25,7 @@ public class Main {
         };
         gm.greet("Cristian");
 
-        GreetingMessage gmm = new GreetingMessage() {
-            @Override
-            public void greet(String name) {
-                System.out.println("Yes it is you: "+ name);
-            }
-        };
-
-        gmm.greet("Cristian");
-
-    }//end main
+       }//end main
 
     
 }
