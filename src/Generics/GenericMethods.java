@@ -16,7 +16,7 @@ public class GenericMethods {
         }
         return list;
     }
- /* Without generic, see above the definition of generic type <T>
+ /* The method down was written without generic, see above the definition of generic type <T>
  IMPORTANT: This allow keep the methods generic and delete boiler plates in the future.
 
  public static List arrayToList(Object[] array, List<Object> list) {
