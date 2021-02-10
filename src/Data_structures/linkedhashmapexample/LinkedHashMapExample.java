@@ -12,7 +12,7 @@ public class LinkedHashMapExample {
     
     public static void main(String[] args) {
 
-        //One of the differences with HashMap is that LinkedHashMap keep the same order that the elements are put on the Hashmap.
+        //One of the differences with HashMap is that LinkedHashMap keep the same order that the elements were put on the Hashmap.
         LinkedHashMap<String, Integer> phonebook = new LinkedHashMap(4,0.75f, true);
         //The constructor could have 3 parameters
         //1 - Initial capacity of the map ex: 4
