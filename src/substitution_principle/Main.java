@@ -23,7 +23,7 @@ public class Main   {
         buildings.add(new Building());
         buildings.add(new Office());
         printBuildings(buildings);
-        //Here it no possible because only apply to sub-classes
+        //Here it no possible because substitution principle not apply in List<type>
 //        List<Office> offices = new ArrayList();
 //        offices.add(new Office());
 //        offices.add(new Office());
