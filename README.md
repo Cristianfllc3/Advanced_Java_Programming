@@ -25,6 +25,8 @@ Example how to use, private static void printShoppingList(String... items), to a
 It is possible use wildcards for sub-classes List <? extends class> ex: method(List<? extends Type> type)  
 It is possible use wildcards for super-classes ex: method(List<? super Type> type)     
 
+**ADVANCED DATA STRUCTURES CHAPTER**   
+
 **Collections**  
 Facts to select one, "ordering, duplicates, speed and memory."  
 Iterable > Collection > Set, List, Queue,   
