@@ -23,23 +23,22 @@ public class Main {
         List<Office> offices = new ArrayList();
         offices.add(new Office());
         offices.add(new Office());
-        //printBuildings(offices);
-
-
+        printBuildings(offices);
+        //It is possible using wildcards for sub-classes List <? extends class> ex: method(List<? extends Building> buildings)
 
         // List of houses
         List<House> houses = new ArrayList();
         houses.add(new House());
         houses.add(new House());
-        //printBuildings(houses);
+        printBuildings(houses);
         
-//        addHouseToList(houses);
-//        addHouseToList(buildings);        
+        addHouseToList(houses);
+        addHouseToList(buildings);
+        //It is possible using wildcards for super-classes ex: method(List<? super House>
         
     }
 
-    
-    static void printBuildings(List<Building> buildings) {
+    static void printBuildings(List<? extends Building> buildings) {
         for(int i = 0; i < buildings.size(); i++) {
             System.out.println(buildings.get(i).toString() + " " + (i + 1));
         }
@@ -47,19 +46,11 @@ public class Main {
     }
     
     
-    static void addHouseToList(List<House> buildings) {
+    static void addHouseToList(List<? super House> buildings) {
         buildings.add(new House());
         System.out.println();
     }
 
 
-/*
-Office office = new Office();
-    build(office);
-    static void build(Building building) {
-        System.out.println("Constructing a new " + building.toString());
-    }*/
-
-    
     
 }
