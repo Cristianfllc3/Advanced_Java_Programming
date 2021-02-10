@@ -25,11 +25,11 @@ Example how to use, private static void printShoppingList(String... items), to a
 It is possible use wildcards for sub-classes List <? extends class> ex: method(List<? extends Type> type)  
 It is possible use wildcards for super-classes ex: method(List<? super Type> type)     
 
-**Collections**
-Facts to select one, "ordering, duplicates, speed and memory."
-Iterable > Collection > Set, List, Queue, 
-  Set: unorder, no duplicates
-  List: duplicates allowed, order is significant
-  Queue: First in, first out
-  Map (this not extends but it is included in the collection pack): Key value pairs, 
+**Collections**  
+Facts to select one, "ordering, duplicates, speed and memory."  
+Iterable > Collection > Set, List, Queue,   
+  Set: unorder, no duplicates    
+  List: duplicates allowed, order is significant  
+  Queue: First in, first out    
+  Map (this not extends but it is included in the collection pack): Key value pairs,  
   Docs: https://www.javatpoint.com/collections-in-java and https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html
