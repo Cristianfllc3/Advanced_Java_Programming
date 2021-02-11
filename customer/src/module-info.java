@@ -1,4 +1,3 @@
 module customer {
-
     requires bookingsystem;
 }
