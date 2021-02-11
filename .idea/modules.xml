@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Advanced_Java_Programming.iml" filepath="$PROJECT_DIR$/Advanced_Java_Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookingsystem/bookingsystem.iml" filepath="$PROJECT_DIR$/bookingsystem/bookingsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer/customer.iml" filepath="$PROJECT_DIR$/customer/customer.iml" />
     </modules>
   </component>
 </project>
