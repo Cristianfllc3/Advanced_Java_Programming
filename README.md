@@ -58,3 +58,18 @@ Iterable > Collection > Set, List, Queue,
         //2 - Load factor the value for default is 0.75f, that means that if the list is 75% full it increase 1 element.  
         //3 - Ordering mode (true or false)  
   
+**FUNCTIONAL PROGRAMING CHAPTER**  
+**package Functional_programing.functionalinterfaceexample;**
+**class Main and interface GreetingMessage**
+Explain: What is a functional interfaces? / It is a interface with one abstract method.
+and introduce Lambdas exp
+
+**package Functional_programing.lambdaexample;**
+**class Main, interface GreetingMessage and interface MessagePrinter**
+//Lambdas help to write shorter functional interfaces, avoiding boil plates
+   Interface f = (Class objet) -> {
+            System.out.println("First Lambdas example !");
+            //method into the class
+        };
+
+**package Functional_programing.methodreferencesexample;**
