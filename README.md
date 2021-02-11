@@ -70,38 +70,38 @@ and introduce Lambdas exp
    Interface f = (Class objet) -> {  
             System.out.println("First Lambdas example !");  
             //method into the class  
-        };  
-  
-**package Functional_programing.methodreferencesexample;**  
-**class Main, interface Shapes and class Square**
-Sometimes, however, a lambda expression does nothing but call an existing method. In those cases, it better use method references
-https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
+        };   
+    
+**package Functional_programing.methodreferencesexample;**    
+**class Main, interface Shapes and class Square**  
+Sometimes, however, a lambda expression does nothing but call an existing method. In those cases, it better use method references  
+https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html  
 
-**package Functional_programing.streamexample;**
-**class Library and class Book**
-        //Stream are considerate internal iterators
-        //Stream have 2 kind of methods lazy(n*) and eager (just 1 at the end) methods
-        System.out.println("With stream");
-        books.stream().filter(book -> {
-            return book.getAuthor().startsWith("J");
-                }
-        ).filter(book -> {
-                    return book.getTitle().startsWith("E");  }
+**package Functional_programing.streamexample;**  
+**class Library and class Book**  
+        //Stream are considerate internal iterators  
+        //Stream have 2 kind of methods lazy(n*) and eager (just 1 at the end) methods  
+        System.out.println("With stream");  
+        books.stream().filter(book -> {  
+            return book.getAuthor().startsWith("J");  
+                }  
+        ).filter(book -> {  
+                    return book.getTitle().startsWith("E");  }  
   
-        //It is possible do it with for each but it is less optimized
-        //This kind of iterations are considerate external iterations
-                //hard to write parallel iterations
-                //More difficult to read
-        System.out.println("With For each");
-        for (Book book: books ) {
-            if (book.getAuthor().startsWith("J") && book.getTitle().startsWith("E") ){
-                System.out.println(book.toString());  }  }  ).forEach(System.out::println);
+        //It is possible do it with for each but it is less optimized  
+        //This kind of iterations are considerate external iterations  
+                //hard to write parallel iterations  
+                //More difficult to read   
+        System.out.println("With For each");  
+        for (Book book: books ) {  
+            if (book.getAuthor().startsWith("J") && book.getTitle().startsWith("E") ){  
+                System.out.println(book.toString());  }  }  ).forEach(System.out::println);  
 
-**package Functional_programing.parallelstreamsexample;**
-**class Library and class Book**
-It is really really easy to add parallel programing, well in the basic :)
-It is best for large dataset, it is possible that stream have a better performance in small data set.
-            System.out.println("With parallelStream");
-        books.parallelStream().filter(book -> {
-            return book.getAuthor().startsWith("J");
-        }).forEach(System.out::println);
+**package Functional_programing.parallelstreamsexample;**  
+**class Library and class Book**  
+It is really really easy to add parallel programing, well in the basic :)  
+It is best for large dataset, it is possible that stream have a better performance in small data set.  
+            System.out.println("With parallelStream");  
+        books.parallelStream().filter(book -> {  
+            return book.getAuthor().startsWith("J");  
+        }).forEach(System.out::println);  
