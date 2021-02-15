@@ -11,7 +11,9 @@ package Multithreading.synchronization;
  */
 public class ATM {    
     
-    static void withdraw(BankAccount account, int amount) {  
+    static synchronized void withdraw(BankAccount account, int amount) {
+
+        //Add the synchronized on the method allow to the thread not executed in parallel affect the method withdraw
         int balance = account.getBalance();
         if((balance - amount) < - account.getOverdraft()) {
             System.out.println("Transaction denied!");            
