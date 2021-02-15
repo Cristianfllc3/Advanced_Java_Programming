@@ -70,7 +70,16 @@ and introduce Lambdas exp
    Interface f = (Class objet) -> {  
             System.out.println("First Lambdas example !");  
             //method into the class  
-        };   
+        };
+        f.method(<T> t);
+ //Old way
+    Interface i = new Interface() {
+     @Override
+      public void method (String s) {
+                System.out.println("Hello " + s);
+            }
+        };
+        i.method("string");
     
 **package Functional_programing.methodreferencesexample;**    
 **class Main, interface Shapes and class Square**  
