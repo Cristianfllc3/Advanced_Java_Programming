@@ -105,3 +105,10 @@ It is best for large dataset, it is possible that stream have a better performan
           books.parallelStream().filter(book -> {  
               return book.getAuthor().startsWith("J");  
           }).forEach(System.out::println);  
+          
+**MODULAR PROGRAMMING IN JAVA**  
+For use a class into a other module, it is necessary add in the module-info.java (module) requires o exports  
+
+Ex: The class custumer use a class Scheduler into a module bookingsystem  
+module customer {requires bookingsystem;}  
+module bookingsystem {exports scheduling;}  
