@@ -15,7 +15,12 @@ public class Main {
 
         //System.out.println(Thread.activeCount());
         ThreadExample thread1 = new ThreadExample();
+        thread1.setName("First thread");
         thread1.start();
+
+        ThreadExample thread2 = new ThreadExample();
+        thread2.setName("Second thread");
+        thread2.start();
         //System.out.println(Thread.activeCount());
 
         
