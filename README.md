@@ -121,3 +121,9 @@ For use a class into a other module, it is necessary add in the module-info.java
 Ex: The class custumer use a class Scheduler into a module bookingsystem  
 module customer {requires bookingsystem;}  
 module bookingsystem {exports scheduling;}  
+
+**OTHER IDEAS**
+ static int factorial(int n) {
+     return (n == 1) ? 1 : n*factorial(n-1);
+
+    }
